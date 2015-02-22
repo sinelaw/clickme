@@ -3,14 +3,14 @@
     <head>
         <script>
          function doit() {
-             document.getElementById('that').style.left = Math.floor(Math.random() * 100) + '%';
-             document.getElementById('that').style.top = Math.floor(Math.random() * 100) + '%';
+             document.getElementById('that').style.left = Math.floor(Math.random() * 90) + 5 + '%';
+             document.getElementById('that').style.top = Math.floor(Math.random() * 90) + 5 + '%';
              document.getElementById('that').style.width = 100 + Math.floor(Math.random() * 50);
              document.getElementById('that').style.height = 50 + Math.floor(Math.random() * 25);
          }
         </script>
     </head>
     <body>
-        <button id="that" type="button" onmousemove="doit()" onclick="alert('Wow.')" style="transition: all 1s ease; position:absolute; left: 50%; top: 50%;">Click Me</button>
+        <button id="that" type="button" onmousemove="doit()" onclick="alert('Wow.')" style="transition: all 0.2s ease; position:absolute; left: 50%; top: 50%">Click Me</button>
     </body>
 </html>
